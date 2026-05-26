@@ -1,0 +1,314 @@
+/*
+  Keep Judge Lisa L. Langford 2026 — Custom Theme Override
+  Color palette: Purple #5B1FAB / Dark Purple #3D1275 / Gold #F5C400
+*/
+
+/* ---- Font Awesome (for Instagram icon) ---- */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* ---- Social Media Icon Buttons ---- */
+a.socnet-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 6px !important;
+    margin: 0 5px !important;
+    float: left;
+    position: relative;
+    right: 50%;
+    background-color: #5B1FAB !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease;
+}
+
+a.socnet-icon:hover {
+    background-color: #F5C400 !important;
+    color: #3D1275 !important;
+    text-decoration: none !important;
+}
+
+a.socnet-icon i {
+    line-height: 1;
+}
+
+/* ---- Pre-header bar ---- */
+.scheme_blue #pre_header {
+    background: #5B1FAB !important;
+}
+
+/* ---- Navigation bar ---- */
+.body_boxed.scheme_blue #main_menu {
+    background-color: #5B1FAB !important;
+    background-image: none !important;
+    background-position: 0 0 !important;
+}
+
+.scheme_blue #main_menu li:hover a,
+.scheme_blue #main_menu li.current-menu-item a,
+.scheme_blue #main_menu li.current_page_item a,
+.scheme_blue #main_menu li.current_page_parent a,
+.scheme_blue #main_menu li.current-menu-parent a,
+.scheme_blue #main_menu ul li ul {
+    background-color: #3D1275 !important;
+}
+
+/* Donate/Contribute button in nav */
+#main_menu #donate_now {
+    background-color: #F5C400 !important;
+    background-image: linear-gradient(to bottom, #F5C400, #D4A800) !important;
+    color: #3D1275 !important;
+    text-shadow: none !important;
+    border-left-color: #D4A800 !important;
+    border-right-color: #D4A800 !important;
+    font-weight: bold !important;
+}
+
+#main_menu #donate_now:hover {
+    background-color: #D4A800 !important;
+    background-image: linear-gradient(to bottom, #D4A800, #B89200) !important;
+    color: #3D1275 !important;
+}
+
+/* ---- Buttons ---- */
+.button,
+input[type="submit"],
+.campaign-email-capture-submit {
+    background-color: #5B1FAB !important;
+    background-image: linear-gradient(to bottom, #6B25C8, #5B1FAB) !important;
+    border-color: #3D1275 !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 0 #3D1275 !important;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+.campaign-email-capture-submit:hover {
+    background-color: #3D1275 !important;
+    background-image: linear-gradient(to bottom, #5B1FAB, #3D1275) !important;
+    text-decoration: none !important;
+}
+
+.button_gray {
+    background-color: #5B1FAB !important;
+    background-image: linear-gradient(to bottom, #6B25C8, #5B1FAB) !important;
+    border-color: #3D1275 !important;
+    color: #FFFFFF !important;
+}
+
+.button_red {
+    background-color: #F5C400 !important;
+    background-image: linear-gradient(to bottom, #F5C400, #D4A800) !important;
+    border-color: #B89200 !important;
+    color: #3D1275 !important;
+    text-shadow: none !important;
+}
+
+.button_red:hover {
+    background-color: #D4A800 !important;
+    color: #3D1275 !important;
+}
+
+/* ---- Headings / Widget titles ---- */
+h1, h2, h3, h4, h5, h6,
+.widgettitle,
+.entry-title,
+.post_title {
+    color: #5B1FAB;
+}
+
+#footer h1, #footer h2, #footer h3,
+#footer h4, #footer h5, #footer h6,
+#footer .widgettitle {
+    color: #F5C400;
+}
+
+/* ---- Footer ---- */
+#footer {
+    background-color: #3D1275 !important;
+    color: #E0D0FF;
+}
+
+#footer_slogan {
+    color: #F5C400 !important;
+}
+
+#footer a {
+    color: #F5C400;
+}
+
+#footer a:hover {
+    color: #FFFFFF;
+}
+
+#post_footer {
+    border-top-color: #5B1FAB !important;
+    color: #C0A0FF !important;
+}
+
+#post_footer a {
+    color: #C0A0FF !important;
+}
+
+/* ---- Links ---- */
+a {
+    color: #5B1FAB;
+}
+
+/* ---- Logo area ---- */
+/* Tight header, logo left-aligned with the main content column. */
+#header {
+    height: auto !important;
+}
+
+#pre_header {
+    height: 3px !important;
+}
+
+#header .container {
+    padding: 0 !important;
+}
+
+#logo_wrap {
+    padding: 2px 0 !important;
+    height: auto !important;
+    text-align: left;
+}
+
+#the_logo {
+    float: left !important;
+    display: inline-block !important;
+    height: auto !important;
+    line-height: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#logo {
+    max-height: 95px;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+/* ---- Hero banner area ---- */
+#slides_wrap {
+    border: 3px solid #5B1FAB;
+}
+
+/* ---- Home widgets bar ---- */
+#home_widgets {
+    border-color: #5B1FAB !important;
+}
+
+#home_widgets h3.widgettitle {
+    border-bottom-color: #F5C400 !important;
+    color: #5B1FAB !important;
+}
+
+/* ---- Sidebar event items ---- */
+.event_list_item .when {
+    color: #5B1FAB;
+    font-weight: bold;
+}
+
+/* ---- Testimonial ---- */
+.the_testimonial {
+    border-left: 3px solid #F5C400;
+    padding-left: 10px;
+}
+
+/* ---- Hero image slide ---- */
+.slide_image_wrap img {
+    object-fit: cover;
+    width: 600px;
+    height: 300px;
+}
+
+/* ---- Candidate hero section ---- */
+#candidate-hero {
+    background: linear-gradient(135deg, #5B1FAB 0%, #3D1275 100%);
+    color: #FFFFFF;
+    padding: 40px 30px;
+    margin: 20px -19px;
+    text-align: center;
+}
+
+#candidate-hero h2 {
+    color: #F5C400;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#candidate-hero p {
+    color: #E0D0FF;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+/* ---- Key issues section ---- */
+.issue-card {
+    background: #f9f6ff;
+    border-left: 4px solid #F5C400;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 4px 4px 0;
+}
+
+.issue-card h5 {
+    color: #5B1FAB;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.issue-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* ---- Paid for disclaimer ---- */
+#paid_for {
+    background-color: #F5C400 !important;
+    border-color: #D4A800 !important;
+    color: #3D1275 !important;
+    font-weight: bold;
+}
+
+/* ---- Election day countdown banner ---- */
+#election-day-banner {
+    background: #F5C400;
+    color: #3D1275;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+/* ---- About page bio ---- */
+#bio-wrap {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#bio-photo {
+    float: left;
+    margin: 0 25px 15px 0;
+    border: 3px solid #5B1FAB;
+    border-radius: 4px;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+    #bio-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}

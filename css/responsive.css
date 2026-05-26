@@ -1,0 +1,406 @@
+/*
+  Keep Judge Lisa L. Langford 2026 — Responsive Layer
+  Overrides the 2012 template's fixed-960px layout for tablets and phones.
+  Breakpoints:
+    980px  → tablets + landscape phones (main collapse)
+    600px  → portrait phones (single-column, tighter spacing)
+    400px  → small phones (smallest type, smallest logo)
+*/
+
+/* Universal: images and tables never overflow their container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================== TABLETS + LANDSCAPE PHONES (≤980px) ============================================== */
+@media (max-width: 980px) {
+
+    /* --- Remove the 960px desktop lock --- */
+    body {
+        min-width: 0 !important;
+    }
+    .container {
+        width: auto !important;
+        max-width: 960px;
+        padding: 0 15px !important;
+        box-sizing: border-box;
+    }
+    #main_wrap {
+        width: auto !important;
+        max-width: 100%;
+    }
+    .body_boxed #main_wrap {
+        width: auto !important;
+    }
+
+    /* --- Election day banner --- */
+    #election-day-banner {
+        font-size: 12px;
+        padding: 8px 10px;
+        line-height: 1.4;
+    }
+
+    /* --- Header / logo --- */
+    #logo_wrap {
+        text-align: left;
+        padding: 2px 0 !important;
+    }
+    #the_logo {
+        float: left !important;
+        display: inline-block;
+    }
+    #logo {
+        max-height: 80px;
+        width: auto;
+        max-width: 100%;
+    }
+    #searchform {
+        display: none;
+    }
+
+    /* --- Navigation: stack the menu items --- */
+    #main_menu {
+        width: auto !important;
+        height: auto !important;
+        line-height: normal !important;
+        padding: 0 0 10px !important;
+    }
+    #main_menu_wrap {
+        position: relative;
+    }
+    #main_menu .menu-main-container {
+        width: 100%;
+    }
+    #main_menu ul.menu {
+        height: auto !important;
+        line-height: normal !important;
+        padding: 0 !important;
+    }
+    #main_menu ul.menu > li {
+        float: none !important;
+        display: block;
+        line-height: 1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    #main_menu a {
+        display: block;
+        padding: 14px 18px !important;
+        line-height: 1 !important;
+    }
+    /* Hide nested dropdowns on touch — they were hover-only anyway */
+    #main_menu ul.menu li ul.sub-menu {
+        display: none !important;
+    }
+    /* Donate button: full-width row beneath nav */
+    #main_menu #donate_now {
+        position: static !important;
+        display: block;
+        height: auto !important;
+        line-height: 1 !important;
+        padding: 14px 20px !important;
+        border-radius: 4px !important;
+        border: none !important;
+        margin: 10px 0 0 !important;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* --- Slider hero area: stack slides above email capture --- */
+    #slides_wrap {
+        width: 100% !important;
+        max-width: 600px;
+        margin: 0 auto 20px !important;
+        padding: 12px !important;
+        box-sizing: border-box;
+        min-height: 0 !important;
+    }
+    #slides {
+        width: 100% !important;
+        height: auto !important;
+        float: none !important;
+        max-width: 600px;
+        margin: 0 auto !important;
+    }
+    .slides_container {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .slides_container .slide_image_wrap {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .slides_container .slide_image_wrap img,
+    .slidearea img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+    }
+    #slide_widget {
+        float: none !important;
+        width: 100% !important;
+        min-height: 0 !important;
+        margin: 20px 0 0 !important;
+    }
+    #slide_widget_inner {
+        display: block !important;
+        height: auto !important;
+    }
+    #slide_widget .widget {
+        display: block !important;
+        margin: 0 !important;
+        padding: 20px 15px;
+    }
+    .campaign_email_capture_wrap input[type="text"] {
+        width: 100% !important;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    /* --- 3-column call-to-action widgets: stack --- */
+    #home_widgets {
+        width: auto !important;
+        margin: 20px 0 !important;
+        padding: 20px !important;
+    }
+    #home_widget_wrap {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #home_widget_wrap .widget {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 25px !important;
+    }
+    #home_widget_wrap .widget:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* --- Main content + sidebar: stack sidebar below --- */
+    .posts-wrap,
+    #content .posts-wrap {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 30px !important;
+    }
+    #sidebar {
+        width: 100% !important;
+        float: none !important;
+        clear: both;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* Sidebar background panel that's positioned absolutely in the template */
+    .body_boxed #sidebar,
+    #content #sidebar {
+        background: none !important;
+        position: static !important;
+    }
+
+    /* --- Bio preview block on home (custom classes) --- */
+    .bio-preview-img {
+        float: none !important;
+        width: auto !important;
+        margin: 0 auto 20px !important;
+    }
+    .bio-preview-img img {
+        margin: 0 auto;
+    }
+    .bio-preview-text {
+        width: auto !important;
+        float: none !important;
+    }
+
+    /* --- About page bio photo --- */
+    #bio-photo {
+        float: none !important;
+        display: block;
+        margin: 0 auto 20px !important;
+        max-width: 240px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* --- Latest posts row: stack --- */
+    #home_latest_posts {
+        margin: 0 !important;
+    }
+    .single_latest {
+        width: 100% !important;
+        max-width: 280px;
+        float: none !important;
+        display: block;
+        margin: 0 auto 30px !important;
+    }
+    #latest-posts-title {
+        width: auto !important;
+    }
+
+    /* --- Footer widgets: stack --- */
+    #footer_widgets {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .footer_widget {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 30px !important;
+        padding: 0 0 20px !important;
+        box-sizing: border-box;
+    }
+    #footer_slogan {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        text-align: center;
+    }
+    .footer_widget .featured_user .avatar {
+        display: block;
+        margin: 0 auto 10px !important;
+        float: none !important;
+    }
+
+    /* --- Forms (contact, volunteer, donate) --- */
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* --- Issues page issue-cards inline styles --- */
+    .issue-card {
+        padding: 15px 18px !important;
+    }
+
+    /* --- Volunteer page 2-col card grid: stack on mobile --- */
+    .posts-wrap > div > div[style*="float:left"][style*="44%"],
+    .posts-wrap > div > div[style*="float:right"][style*="44%"] {
+        float: none !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+
+    /* --- Donate page amount buttons --- */
+    .donate-amount {
+        padding: 12px 20px !important;
+        font-size: 16px !important;
+        margin: 5px !important;
+    }
+
+    /* --- Social icons row centers nicely --- */
+    #socnets_wrap {
+        top: 0 !important;
+        margin-bottom: 10px !important;
+        padding: 10px 0 !important;
+    }
+
+    /* --- Paid-for disclaimer stays readable --- */
+    #paid_for {
+        display: inline-block;
+        max-width: 100%;
+        font-size: 12px;
+    }
+}
+
+/* ============================================== PORTRAIT PHONES (≤600px) ============================================== */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 13px !important;
+        line-height: 19px !important;
+    }
+
+    /* Smaller hero / page headings */
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.25 !important;
+    }
+    .post_title {
+        font-size: 22px !important;
+    }
+    #footer_slogan {
+        font-size: 26px !important;
+    }
+
+    /* Slider area gets a smaller inner padding */
+    #slides_wrap {
+        padding: 8px !important;
+    }
+
+    /* Home widget panel padding */
+    #home_widgets {
+        padding: 15px !important;
+    }
+    #home_widget_wrap .widget h3 {
+        font-size: 16px !important;
+    }
+
+    /* Election day banner shrinks letter-spacing */
+    #election-day-banner {
+        font-size: 11px !important;
+        letter-spacing: 0 !important;
+        padding: 7px 8px !important;
+    }
+
+    /* Bio photo on About page */
+    #bio-photo {
+        max-width: 200px !important;
+    }
+
+    /* RBG / hero panels: tighter padding */
+    .issue-card {
+        padding: 12px 14px !important;
+    }
+    .issue-card h4,
+    .issue-card h5 {
+        font-size: 15px !important;
+    }
+
+    /* Donate amount buttons: smaller still */
+    .donate-amount {
+        padding: 10px 14px !important;
+        font-size: 14px !important;
+        margin: 4px 3px !important;
+    }
+
+    /* Buttons stack better */
+    .button,
+    input[type="submit"] {
+        white-space: normal !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Inline 2-col layouts on About page credentials */
+    .posts-wrap div[style*="float:left"][style*="48%"],
+    .posts-wrap div[style*="float:right"][style*="48%"] {
+        float: none !important;
+        width: 100% !important;
+    }
+}
+
+/* ============================================== SMALL PHONES (≤400px) ============================================== */
+@media (max-width: 400px) {
+    #logo {
+        max-height: 85px !important;
+    }
+    #election-day-banner {
+        font-size: 10px !important;
+    }
+    #footer_slogan {
+        font-size: 22px !important;
+    }
+    .post_title {
+        font-size: 20px !important;
+    }
+    .donate-amount {
+        padding: 9px 12px !important;
+        font-size: 13px !important;
+    }
+}

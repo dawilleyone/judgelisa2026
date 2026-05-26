@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "Campaign Kickoff Announced",
+      "date": "2026-01-15",
+      "summary": "Judge Lisa L. Langford officially launches her 2026 re-election campaign for District Court Judge of Jefferson County.",
+      "image": "images/latest_fallback.png",
+      "url": "news.html"
+    },
+    {
+      "title": "Community Endorsements",
+      "date": "2026-02-15",
+      "summary": "Local leaders and community organizations announce their support for Judge Langford's continued service on the bench.",
+      "image": "images/latest_fallback.png",
+      "url": "news.html"
+    },
+    {
+      "title": "Upcoming Campaign Events",
+      "date": "2026-03-01",
+      "summary": "A look at the campaign events coming up across Jefferson County — from town halls to fundraisers to volunteer drives.",
+      "image": "images/latest_fallback.png",
+      "url": "events.html"
+    }
+  ]
+}

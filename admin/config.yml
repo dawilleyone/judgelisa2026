@@ -1,0 +1,73 @@
+# ===================================================================
+# Decap CMS Configuration
+# Keep Judge Lisa L. Langford 2026
+# ===================================================================
+#
+# This file tells the admin UI what content can be edited and what fields each entry has.
+# Editors interact with this through a friendly form at /admin/ — they never see this file.
+#
+# If you host on Netlify (recommended), leave the backend as `git-gateway`.
+# If you host elsewhere, see CMS-SETUP.md for the GitHub OAuth backend option.
+
+backend:
+  name: git-gateway
+  branch: main      # change to "master" if your default branch is named master
+
+# Where uploaded images are stored
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+# Show a publish/preview workflow (recommended — lets editors draft before publishing)
+publish_mode: editorial_workflow
+
+collections:
+
+  # -----------------------------------------------------------------
+  # 1. Campaign Events
+  # Stored as a single JSON file with a list of events.
+  # -----------------------------------------------------------------
+  - name: "events"
+    label: "Campaign Events"
+    description: "Add, edit, or remove campaign events. Events appear automatically on every page that shows the events sidebar, and on the main Events page."
+    files:
+      - file: "data/events.json"
+        label: "All Events"
+        name: "events"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - {label: "Event Title", name: "title", widget: "string", hint: "e.g. Campaign Fundraiser Dinner"}
+              - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false, hint: "Leave blank if date is To Be Announced"}
+              - {label: "Time (optional)", name: "time", widget: "string", required: false, hint: "e.g. 6:00 pm – 9:00 pm"}
+              - {label: "Location", name: "location", widget: "string", default: "Jefferson County, Kentucky"}
+              - {label: "Description", name: "description", widget: "text", hint: "1–3 sentence description of the event"}
+              - {label: "Button Text (optional)", name: "ctaText", widget: "string", required: false, default: "Get Details"}
+              - {label: "Button Link (optional)", name: "ctaUrl", widget: "string", required: false, default: "contact.html", hint: "Where the button should go — e.g. contact.html, donate.html, or a full URL"}
+              - {label: "Show in sidebar widget on other pages?", name: "showInSidebar", widget: "boolean", default: true, hint: "Uncheck to keep this event only on the main Events page"}
+              - {label: "Sidebar Tag", name: "sidebarLabel", widget: "string", required: false, hint: "Short label shown in sidebar, e.g. Fundraiser, Rally, Town Hall"}
+
+  # -----------------------------------------------------------------
+  # 2. Campaign News
+  # Stored as a single JSON file with a list of news posts.
+  # -----------------------------------------------------------------
+  - name: "news"
+    label: "Campaign News"
+    description: "Add, edit, or remove news headlines. The three most recent posts show on the homepage."
+    files:
+      - file: "data/news.json"
+        label: "All News Posts"
+        name: "news"
+        fields:
+          - label: "News Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "Summary", name: "summary", widget: "text", hint: "1–2 sentence description"}
+              - {label: "Image", name: "image", widget: "image", required: false, default: "images/latest_fallback.png", hint: "Optional — defaults to a placeholder"}
+              - {label: "Link URL (optional)", name: "url", widget: "string", required: false, hint: "Where clicking the headline takes the visitor"}

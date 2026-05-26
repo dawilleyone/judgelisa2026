@@ -10,7 +10,7 @@
 # If you host elsewhere, see CMS-SETUP.md for the GitHub OAuth backend option.
 
 backend:
-  name: git-gateway
+  name: github
   repo: dawilleyone/judgelisa2026
   branch: main
   auth_type: pkce

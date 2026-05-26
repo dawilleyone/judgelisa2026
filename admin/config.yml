@@ -10,7 +10,8 @@
 # If you host elsewhere, see CMS-SETUP.md for the GitHub OAuth backend option.
 
 backend:
-  name: git-gateway
+  name: github
+  repo: dawilleyone/judgelisa2026
   branch: main      # change to "master" if your default branch is named master
 
 # Where uploaded images are stored

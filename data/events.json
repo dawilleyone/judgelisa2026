@@ -1,59 +1,59 @@
 {
   "events": [
     {
-      "title": "Campaign Kickoff Rally",
-      "date": "",
       "time": "",
+      "date": "",
       "location": "Jefferson County, Kentucky",
-      "description": "Join us for the official launch of the Keep Judge Langford 2026 campaign. Come meet the Judge, hear her vision for our community, and find out how you can get involved to make a difference on November 3rd.",
-      "ctaText": "RSVP / Get Details",
-      "ctaUrl": "contact.html",
+      "sidebarLabel": "Rally",
+      "title": "Campaign Kickoff Rally",
       "showInSidebar": true,
-      "sidebarLabel": "Rally"
+      "description": "Join us for the official launch of the Keep Judge Langford 2026 campaign at Blak Koffee on June 5th, 2026",
+      "ctaText": "RSVP / Get Details",
+      "ctaUrl": "contact.html"
     },
     {
-      "title": "Campaign Fundraiser Dinner",
-      "date": "",
       "time": "",
+      "date": "",
       "location": "Jefferson County, Kentucky",
+      "sidebarLabel": "Fundraiser",
+      "title": "Campaign Fundraiser Dinner",
+      "showInSidebar": true,
       "description": "An evening reception and fundraiser dinner to support Judge Langford's re-election campaign. Enjoy a wonderful evening while helping ensure that experienced, fair judicial leadership continues in Jefferson County. Sponsorship opportunities are available.",
       "ctaText": "Contribute / Purchase Tickets",
-      "ctaUrl": "donate.html",
-      "showInSidebar": true,
-      "sidebarLabel": "Fundraiser"
+      "ctaUrl": "donate.html"
     },
     {
-      "title": "Community Town Hall",
-      "date": "",
       "time": "",
+      "date": "",
       "location": "Jefferson County, Kentucky",
+      "sidebarLabel": "Community",
+      "title": "Community Town Hall",
+      "showInSidebar": true,
       "description": "An open community forum where Judge Langford will speak directly with Jefferson County residents, answer questions about her judicial record, and discuss her priorities for the court if re-elected. All community members are welcome — free admission.",
       "ctaText": "Get Details",
-      "ctaUrl": "contact.html",
-      "showInSidebar": true,
-      "sidebarLabel": "Community"
+      "ctaUrl": "contact.html"
     },
     {
-      "title": "Volunteer Phone Bank & Canvass Days",
-      "date": "",
       "time": "",
+      "date": "",
       "location": "Campaign Headquarters, Jefferson County",
+      "sidebarLabel": "Volunteer",
+      "title": "Volunteer Phone Bank & Canvass Days",
+      "showInSidebar": false,
       "description": "Join our volunteer team for organized phone banking and door-to-door canvassing events across Jefferson County. No experience needed — we will train you! Every conversation you have with a voter makes a real difference in this election.",
       "ctaText": "Sign Up to Volunteer",
-      "ctaUrl": "volunteer.html",
-      "showInSidebar": false,
-      "sidebarLabel": "Volunteer"
+      "ctaUrl": "volunteer.html"
     },
     {
-      "title": "Election Day — Vote!",
-      "date": "2026-11-03",
       "time": "7:00 am – 7:00 pm",
+      "date": "2026-11-03",
       "location": "Polling locations across Jefferson County, Kentucky",
+      "sidebarLabel": "Election Day",
+      "title": "Election Day — Vote!",
+      "showInSidebar": true,
       "description": "Polls are open from 7:00 am to 7:00 pm in Jefferson County, Kentucky. Vote for Judge Lisa L. Langford for District Court Judge and encourage everyone you know to do the same!",
       "ctaText": "Check Your Registration",
-      "ctaUrl": "https://govote.ky.gov/",
-      "showInSidebar": true,
-      "sidebarLabel": "Election Day"
+      "ctaUrl": "https://govote.ky.gov/"
     }
   ]
 }

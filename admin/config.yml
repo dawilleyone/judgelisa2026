@@ -39,7 +39,7 @@ auth:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in Decap CMS (optional)
-site_url: http://www.keepjudgelisallangford.com
+site_url: https://www.keepjudgelisallangford.com
 
 # Where uploaded images are stored
 media_folder: "images/uploads"
